@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.pdp.phoneapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_phonesFragment"
+            app:destination="@id/phonesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_phonesAddFragment"
+            app:destination="@id/phonesAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phonesFragment"
+        android:name="uz.pdp.phoneapp.PhonesFragment"
+        android:label="fragment_phones"
+        tools:layout="@layout/fragment_phones" >
+        <action
+            android:id="@+id/action_phonesFragment_to_phoneTypeFragment"
+            app:destination="@id/phoneTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneTypeFragment"
+        android:name="uz.pdp.phoneapp.PhoneTypeFragment"
+        android:label="fragment_phone_type"
+        tools:layout="@layout/fragment_phone_type" >
+        <action
+            android:id="@+id/action_phoneTypeFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="uz.pdp.phoneapp.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/phonesAddFragment"
+        android:name="uz.pdp.phoneapp.PhonesAddFragment"
+        android:label="fragment_phones_add"
+        tools:layout="@layout/fragment_phones_add" >
+        <action
+            android:id="@+id/action_phonesAddFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="uz.pdp.phoneapp.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+</navigation>

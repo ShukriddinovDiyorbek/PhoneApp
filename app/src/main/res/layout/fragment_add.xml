@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment">
+
+    <EditText
+        android:id="@+id/phone_name"
+        android:hint="Phone name"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/edit_background"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+    <EditText
+        android:id="@+id/phone_features"
+        android:hint="Phone features"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:gravity="start"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/edit_background"
+        android:layout_width="match_parent"
+        android:layout_height="364dp"/>
+    <Button
+        android:id="@+id/add_btn"
+        android:text="Add"
+        android:textSize="16sp"
+        android:background="@drawable/button_rounded_corner"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
